@@ -7,7 +7,7 @@ bikeApp.stations = [];
 bikeApp.events = function () {
 
     $.ajax({
-        url: 'http://api.citybik.es/v2/networks/toronto',
+        url: 'https://api.citybik.es/v2/networks/toronto',
         method: 'GET',
         dataType: 'json',
         data: {
