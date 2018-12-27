@@ -78,13 +78,26 @@ var options = {
 
 $("#match").easyAutocomplete(options);
 
-$('#grayscale').click(function (){
-   $('link[href="style1.css"]').attr('href','style2.css');
-});
-$('#original').click(function (){
-   $('link[href="style2.css"]').attr('href','style1.css');
-});
+/*$('#original').click(function() {
 
+    var isDarkCss = $("link[href='style1.css']");
+
+    if (isDarkCss.length){
+        isDarkCss.remove();
+    }else{
+        $('head').append('<link type="text/css" rel="stylesheet" media="all" href="style2.css">');
+    }
+});*/
+
+$('#toggler').click(function(){
+    if($('link#styles').attr('href')=="day.css"){
+        $('link#styles').attr('href','night.css')
+    }
+    else
+    {
+        $('link#styles').attr('href','day.css')
+    }
+})
 
 bikeApp.init = function () {
     bikeApp.events();
