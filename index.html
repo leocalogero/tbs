@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Toronto Bike Share Live</title>
+	<link rel="stylesheet" href="style1.css">
+	<link rel="stylesheet" href="style2.css">
+	<script src="https://use.fontawesome.com/455b5ce365.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+	<header>
+		<div class="logo">
+			<span>TBS Live</span>
+		</div>
+		<nav>
+			<ul>
+				<li><span id="original">White</span></li>
+				<li ><span id="grayscale">Black</span></li>
+				<li>Contact</li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<div class="wrapper">
+			<div class="content__inner">
+				<div class="bikeshare__container">
+					<div class="content__title">
+						<h1>
+							toronto<br>bike share
+						</h1>
+						<p>
+							A <i><strong>single page application</strong></i> that helps you find a bike or an empty slot in Toronto. Thats it, no bells no whistles. Find it, and park it with Toronto Bike Share Live
+						</p>
+					</div>
+					<div class="content__input">
+						<form class="station" id="station" method="get" action="#bikeResponse">
+						    <input class="usersLocay input__location" type="text" id="match" placeholder="Whats Your Intersection?" required>
+						    <input type="submit" form="station" class="submitBtn input__submit button" value="Find" onclick="location.href='#bikeResponse'"></input>
+						</form>
+					</div>
+					<div class="content__output">
+						<h2 class="choosenStation"></h2>
+						<div class="bikeInfo" id="bikeInfo">
+						    <div class="fBBox">
+						        <h2>Free Bikes</h2>
+						        <div class="freeBikes"></div>
+						        <div class="fBIcon"></div>
+						    </div>
+						    <div class="eSBox">
+						        <h2>Empty Slots</h2>
+						        <div class="emptySlots"></div>
+						        <div class="eSIcon"></div>
+						    </div>
+						</div>
+					</div>
+					<footer>
+						<nav>
+							<ul class="social">
+								<li><i class="fa fa-facebook"></i></li>
+								<li><i class="fa fa-google"></i></li>
+								<li><i class="fa fa-twitter"></i></li>
+								<li><i class="fa fa-instagram"></i></li>
+								<li><i class="fa fa-toggle-on"></i></li>
+							</ul>
+						</nav>
+					</footer>
+				</div>
+				<div class="bikeshare__container">
+					
+				</div>
+				<div class="ad__box">
+					<div class="big-box"></div>
+					<div class="big-box"></div>
+					<div class="big-box"></div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+	<script src="jquery.easy-autocomplete.min.js"></script>
+	<script src="scripts.js"></script>
+</body>
+</html>
